@@ -1,153 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <title>My Portfolio</title>
-    <meta
-      name="keywords"
-      content="web developer portfolios, software developer portfolios" />
-    <meta
-      name="description"
-      content="Welcome to My Software Developer Portfolio." />
-    <meta name="author" content="Yasanga Kavishan" />
-    <meta name="robots" content="index" />
-    <meta
-      name="viewport"
-      content="width=device-width initial-scale=1  user-scalable=no minimum-scale" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link rel="stylesheet" href="assests/styles.css">
-    <link rel="icon" href="./assests/img/fav.png" />
-    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assests/styles.css" />
+    <title>My Portfolio | Yasanga.com</title>
   </head>
-  <main>
-  
-    <header>
-      <div class="container">
-        <div class="yasanga">Yasanga_</div>
-      
-<ul class="navigation">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-
- 
-</ul>
-      </div>
-     
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Yasanga_</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link"> Home </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link"> About </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link"> Skills </a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link"> Services </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link"> Portfolio </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link"
+                ><i class="uil uil-message nav_icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+        <div class="nav_btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-<!-- <section>
-    <aside>
-      <img src="./assests/img/portfolio_image.png" alt="">
-      <h1>Hello there, <b> I'm Yasanga Kavishan.</b></h1>
-      <p> I'm  a software developer with 2+ years of experience in the industry. I've worked with small businesses to help develop and maintain their tech infrastructure. I'm passionate about using technology to create solutions that help businesses grow and succeed.</p>
-    
-    
-    <button>Contact Me.</button>
-    </aside>
-    <img src="" alt="">
-    </section>
 
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a
+                href="https://github.com/Gunawardhane"
+                target="_blank"
+                class="home_social-icon"
+                ><i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yasanga-kavishan/"
+                target="_blank"
+                class="home_social-icon"
+                ><i class="uil uil-linkedin-alt"></i>
+              </a>
 
-  <section>
-<h1><a id="about"></a><b>About Me...</b></h1>
-<img src="./assests/img/ME2.jpg" alt="">
-<aside><img src="" alt=""></aside>
-<article>Hello, I'm a 23-year-old web developer with over two years of experience in HTML, CSS, JavaScript, Wix, and WordPress. Currently, I'm pursuing an HND in software engineering at the Institute of Java Software Engineering to deepen my skills and knowledge. I'm highly committed to delivering top-quality work and building strong relationships with my clients. I'm always eager to expand my skill set and take on new challenges. If you're looking for a skilled and dedicated web developer for your next project, I'd love to work with you!</article>
+              <a
+                href="https://twitter.com/_Yazaaaa_"
+                target="_blank"
+                class="home_social-icon"
+                ><i class="uil uil-twitter-alt"></i>
+              </a>
+            </div>
+            <div class="home_img">
+              <img
+                src="./assests/img/portfolio_image.png"
+                alt=""
+                class="portfolio_Cover_Photo" />
+            </div>
+            <div class="home_data">
+              <h1 class="home_title">
+                Hello there,
+                <br />
+                I'm Yasanga Kavishan.
+              </h1>
 
-<h1><b>02+</b></h1>
-<h3><b>Years Experience</b></h3>
-
-<h1><b>10+</b></h1>
-<h3><b>Completed Projects..</b></h3>
-<button><a href="./assests/docs/CV.pdf" download="cv.pdf">Download CV</a></button>
-</section>
-
-<section>
-  <h1><b><a id="qualification">Qualifications</a></b></h1>
-  <h3>My Personal Journey...</h3>
-  <section>
-
-  </section>
-</section>
-
-<section>
-  <h1><b><a id="projects">Projects</a></b></h1>
-  <section></section>
-  <section></section>
-</section>
-
-<section>
-  <h1><b><a id="services">Services</a></b></h1>
-  <section><aside>
-   
-   <img src="./assests/img/standALoneApplication.png" alt="StandALone Application">
-   <h1>Standalone Applications</h1>
-   <h4>More Details >>></h4>
-  </aside></section>
-  <section><aside>
-    <img src="" alt=""> 
-   <h1>Web Applications</h1>
-   <h4>More Details >>></h4>
-  </aside></section>
-  <section><aside>
-    <img src="" alt=""> 
-   <h1>WordPress Website</h1>
-   <h4>More Details >>></h4>
-  </aside></section>
-</section>
-
-<section>
-  <h1><b><a id="projects">Projects</a></b></h1>
-  <section>
-    <img src="" alt="">
-    <img src="" alt="">
-  </section>
-</section>
-
-<section>
-  <h1><b><a id="gallery">Gallery</a></b></h1>
-  <section><img src="" alt=""></section>
-</section>
-
- <section>
-  <h1>Contact</h1>
-  <section>
-    <address></address>
-  </section>
-  <section>
-    <aside></aside>
-  </section>
-</section>
-</main> -->
-
-<!-- <footer>
- <section>
-  <h1><b><a id="contacts">Gallery</a></b></h1>
-  <ul>
-    <li><a href="#"></a></li>
-    <img src="./assests/img/callMe.png" alt="">
-    <li><a href="tel:0715492998">0715492998</a></li>
-    <img src="./assests/img/Email.png" alt="">
-    <li><a href="mailto:yasangawd@gmail.com">Yasangawd@gmail.com</a></li>
-    <img src="./assests/img/location.png" alt="">
-    <li><a href="">Galle</a></li>
-  </ul>
-
-  <form action="" method="post">
-    <label for="name">Name :</label>
-    <input type="text" id="name">
-    <label for="email">Email :</label>
-    <input type="email" name="" id="email">
-    <label for="message">Message</label>
-    <input type="text" name="" id="message">
-  </form>
- </section>
-</footer> --> 
-
-
-</body>
+              <p class="home_description">
+                I'm a software developer with 2+ years of experience in the
+                industry. I've worked with small businesses to help develop and
+                maintain their tech infrastructure. I'm passionate about using
+                technology to create solutions that help businesses grow and
+                succeed.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me.
+                <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
