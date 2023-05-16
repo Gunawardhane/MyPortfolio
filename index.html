@@ -32,7 +32,10 @@
               <a href="#services" class="nav_link"> Services </a>
             </li>
             <li class="nav_item">
-              <a href="#portfolio" class="nav_link"> Portfolio </a>
+              <a href="#projects" class="nav_link"> Projects </a>
+            </li>
+            <li class="nav_item">
+              <a href="#gallery" class="nav_link"> Gallery </a>
             </li>
             <li class="nav_item">
               <a href="#contact" class="nav_link"
@@ -150,7 +153,7 @@
       </section>
       <!-- Qualification Section -->
 
-      <section class="qualification section">
+      <section class="qualification section" id="">
         <h2 class="section_title">Qualifications</h2>
         <span class="section_subtitle">My personal journey</span>
         <div class="qualification_container container">
@@ -269,7 +272,7 @@
       </section>
       <!-- Skills -->
 
-      <div class="skills_section">
+      <div class="skills_section" id="skills">
         <div class="skills_head">
           <h2 class="section_title">My Skills</h2>
           <p>My technical skill levels..</p>
@@ -488,103 +491,106 @@
       </section>
 
       <!-- Projects -->
-      <h2 class="section_title">Projects</h2>
-      <p class="section_subtitle">My Recent Works</p>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="./assests/img/MVC_Project.png" style="width: 100%" />
-          <div class="text">MVC Project</div>
-          <a
-            href="https://github.com/Gunawardhane/Layered-_Architecture"
-            class="links"
-            >Github Link</a
-          >
+      <section id="projects">
+        <h2 class="section_title" id="'portfolio">Projects</h2>
+        <p class="section_subtitle">My Recent Works</p>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="./assests/img/MVC_Project.png" style="width: 100%" />
+            <div class="text">MVC Project</div>
+            <a
+              href="https://github.com/Gunawardhane/Layered-_Architecture"
+              class="links"
+              >Github Link</a
+            >
+          </div>
+
+          <div class="mySlides fade">
+            <a href="http://google.com">Link</a>
+            <div class="numbertext"></div>
+            <img src="./assests/img/blog.png" style="width: 100%" />
+
+            <div class="text">Chakrasamvara Center Blog</div>
+            <a href="https://blog.chakrasamvaracenter.com/" class="links"
+              >Go to Website</a
+            >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img
+              src="./assests/img/Car_animation.png"
+              style="width: 500px"
+              height="500px" />
+            <div class="text">My Assignments</div>
+            <a
+              href="https://github.com/Gunawardhane/MyPortfolio/tree/main/Assignments/Animations/Case%20Six"
+              class="links"
+              >Go to Github</a
+            >
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br />
 
-        <div class="mySlides fade">
-          <a href="http://google.com">Link</a>
-          <div class="numbertext"></div>
-          <img src="./assests/img/blog.png" style="width: 100%" />
-
-          <div class="text">Chakrasamvara Center Blog</div>
-          <a href="https://blog.chakrasamvaracenter.com/" class="links"
-            >Go to Website</a
-          >
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img
-            src="./assests/img/Car_animation.png"
-            style="width: 500px"
-            height="500px" />
-          <div class="text">My Assignments</div>
-          <a
-            href="https://github.com/Gunawardhane/MyPortfolio/tree/main/Assignments/Animations/Case%20Six"
-            class="links"
-            >Go to Github</a
-          >
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+      </section>
     </main>
 
     <!-- Gallery -->
+    <section id="gallery">
+      <h2 class="section_title" id="gallery">Gallery</h2>
+      <p class="section_subtitle">
+        Welcome to the gallery section of my developer portfolio! I hope this
+        personal touch gives you a better sense of who I am and what I enjoy
+        outside of work.
+      </p>
 
-    <h2 class="section_title">Gallery</h2>
-    <p class="section_subtitle">
-      Welcome to the gallery section of my developer portfolio! I hope this
-      personal touch gives you a better sense of who I am and what I enjoy
-      outside of work.
-    </p>
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/Cric_3.jpg" alt="" />
+          </div>
+        </div>
 
-    <div class="gallery" id="gallery">
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/Cric_3.jpg" alt="" />
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/Cric_4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/Cric_5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/new_year1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/new_year2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img src="./assests/img/Cricket _1.jpg" alt="" />
+          </div>
         </div>
       </div>
-
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/Cric_4.jpg" alt="" />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/Cric_5.jpg" alt="" />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/new_year1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/new_year2.jpg" alt="" />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <div class="content">
-          <img src="./assests/img/Cricket _1.jpg" alt="" />
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- contact me -->
     <section class="contact section" id="contact">
