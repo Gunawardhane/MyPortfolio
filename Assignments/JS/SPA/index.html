@@ -234,6 +234,7 @@
                   type="button"
                   class="btn btn-success"
                   id="btnSave"
+                  onclick="addNewCustomer()"
                   data-bs-dismiss="modal">
                   Save
                 </button>
@@ -613,23 +614,53 @@
         </div>`
         } ;
 
-        function getPageContent(page) {
-        var contentToReturn;
+    //     function getPageContent(page) {
+    //     var contentToReturn;
 
-        switch (page) {
-            case 'customer' :
-                contentToReturn = pages.customer;
-                break;
-            case 'store' :
-                contentToReturn = pages.store;
-                break;
-            case 'placeOrder' :
-                contentToReturn = pages.placeOrder;
-                break;
+    //     switch (page) {
+    //         case 'customer' :
+    //             contentToReturn = pages.customer;
+    //             break;
+    //         case 'store' :
+    //             contentToReturn = pages.store;
+    //             break;
+    //         case 'placeOrder' :
+    //             contentToReturn = pages.placeOrder;
+    //             break;
             
-        }
-        document.getElementById('content').innerHTML = contentToReturn;
-    }
+    //     }
+    //     document.getElementById('content').innerHTML = contentToReturn;
+    // }
+
+
+    function getPageContent(page) {
+  var contentDiv = document.getElementById('content');
+
+  // Clear the existing content
+  contentDiv.innerHTML = '';
+
+  // Retrieve the content based on the selected page
+  var content;
+  switch (page) {
+    case 'customer':
+      content = pages.customer;
+      break;
+    case 'store':
+      content = pages.store;
+      break;
+    case 'placeOrder':
+      content = pages.placeOrder;
+      break;
+    case 'orderDetails':
+      content = pages.orderDetails;
+      break;
+    default:
+      content = '';
+  }
+
+  // Set the retrieved content to the content div
+  contentDiv.innerHTML = content;
+}
 
    
 
@@ -656,6 +687,23 @@
       }
 
       loadLastVisitedSection();
+
+
+      function addNewCustomer() {
+            var form = document.createElement("form");
+            
+            var nameLabel = document.createElement("label");
+            nameLabel.textContent = "Name: ";
+            
+            var nameInput = document.createElement("input");
+            nameInput.setAttribute("type", "text");
+            
+            form.appendChild(nameLabel);
+            form.appendChild(nameInput);
+            
+            document.getElementById("content").appendChild(form);
+        }
+
 
     </script>
 
