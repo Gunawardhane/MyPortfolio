@@ -256,6 +256,64 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"></script>
 
+      
+        <script>
+          $(document).ready(function () {
+            let customerData = []; // 
+      
+            $("#btnCustomer").click(function () {
+              let id = $("#cusId").val();
+              let name = $("#cusName").val();
+              let address = $("#cusAddress").val();
+              let salary = $("#cusSalary").val();
+      
+            
+              let customer = {
+                id: id,
+                name: name,
+                address: address,
+                salary: salary
+              };
+      
+              customerData.push(customer);
+      
+              $("#cusId").val("");
+              $("#cusName").val("");
+              $("#cusAddress").val("");
+              $("#cusSalary").val("");
+      
+              
+              updateTable();
+            });
+      
+            function updateTable() {
+              let tBody = $("#tblCustomer");
+              tBody.empty();
+      
+            
+              $.each(customerData, function (index, customer) {
+                let row = $("<tr></tr>");
+      
+                
+                $("<td></td>").text(customer.id).appendTo(row);
+                $("<td></td>").text(customer.name).appendTo(row);
+                $("<td></td>").text(customer.address).appendTo(row);
+                $("<td></td>").text(customer.salary).appendTo(row);
+      
+           
+                row.appendTo(tBody);
+              });
+            }
+          });
+        </script>
+    
+      
+
+
+
+
+<!-- 
+
       <script>
         document.getElementById("btnCustomer").addEventListener("click", function () {
           // Get typed values of input fields
@@ -293,7 +351,7 @@
           // Append the row to the table body
           tBody.appendChild(tr);
         });
-      </script>
+      </script> -->
    
     
   </body>
