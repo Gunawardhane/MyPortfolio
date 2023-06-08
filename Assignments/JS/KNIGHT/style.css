@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .scanner{
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .scanner__node{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .hot-red{
+    background-color: #ff0000 !important;
+  }
+  
+  .red{
+    background-color: #ba0000 !important;
+  }
+  
+  .dark-red{
+    background-color: #450000;
+  }
+  
