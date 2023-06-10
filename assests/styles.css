@@ -835,10 +835,15 @@ margin-bottom: 40px;
   align-items: center;
   display: flex;
   justify-content: center;
-margin-top: 20px;
+margin-top: 40px;
 /* margin-left: 80px;*/
 margin-bottom: 40px; 
 }
+
+.dotsz{
+  margin-bottom: 20px;
+}
+
 
 /* Gallery */
 
