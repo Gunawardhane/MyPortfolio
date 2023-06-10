@@ -5,7 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=	, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .scanner {
+        margin-top: 50px;
+        display: flex;
+      }
+
+      .scanner__node {
+        width: 100px;
+        height: 50px;
+        margin: 5px;
+        transition: 0.3s;
+        border-radius: 5px;
+      }
+
+      .hot-red {
+        background-color: #ff0000 !important;
+      }
+
+      .red {
+        background-color: #ba0000 !important;
+      }
+
+      .dark-red {
+        background-color: #450000;
+      }
+    </style>
   </head>
   <body>
     <a href="https://fontmeme.com/knight-rider-font/"
