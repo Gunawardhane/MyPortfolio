@@ -829,6 +829,17 @@ margin-bottom: 40px;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+/* Assignments */
+
+.AssignmentButton{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+margin-top: 20px;
+/* margin-left: 80px;*/
+margin-bottom: 40px; 
+}
+
 /* Gallery */
 
 .hello {
