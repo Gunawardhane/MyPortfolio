@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+  </head>
+  <body
+    class="d-flex container-fluid align-items-center justify-content-center">
+    <!-- Calculator body -->
+    <main class="rounded-5 opacity-75 shadow-lg p-2 bg-dark">
+      <!-- Display -->
+      <section
+        class="d-flex h-50 flex-column align-items-center justify-content-evenly">
+        <div
+          class="display h-50 w-100 d-flex flex-column align-items-end justify-content-end mt-5">
+          <input
+            class="text-secondary h1 w-100 text-end border-0 bg-dark p-2 data"
+            disabled
+            placeholder="" />
+          <input
+            class="text-secondary h1 w-100 text-end border-0 bg-dark p-2"
+            disabled
+            placeholder="" />
+        </div>
+        <div class="clear w-100">
+          <div class="col-3 d-flex align-items-end justify-content-center">
+            <button
+              class="rounded-circle keys bg-danger shadow special"
+              id="btn16">
+              C
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <section class="h-50 bg-primary w-100 rounded-5 p-2 shadow" id="buttons">
+        <aside class="row h-25 align-items-center justify-content-center">
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn0">7</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn1">8</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn2">9</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow special" id="btn3">
+              +
+            </button>
+          </div>
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn4">4</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn5">5</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn6">6</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow special" id="btn7">
+              -
+            </button>
+          </div>
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn8">1</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn9">2</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn10">3</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow special" id="btn11">
+              /
+            </button>
+          </div>
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn12">0</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn13">.</button>
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow" id="btn14">=</button>
+          </div>
+
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <button class="rounded-circle keys shadow special" id="btn15">
+              x
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- JS For Bootstrap -->
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
+
+    <!-- JS For jQuery -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <script>
+      let number = "";
+      let firstNumber = 0;
+      let lastNumber = 0;
+      let operator = "";
+      let topDisplay = "";
+
+      for (let i = 0; i < 17; i++) {
+        $("#btn" + i).click(function () {
+          let pressedBtn = $("#btn" + i).text();
+          switch (pressedBtn) {
+            case "C":
+              firstNumber = "";
+              lastNumber = "";
+              operator = "";
+              number = "";
+              topDisplay = "";
+              break;
+            case "+":
+              setOutput("+");
+              break;
+            case "-":
+              setOutput("-");
+              break;
+            case "x":
+              setOutput("x");
+              break;
+            case "/":
+              setOutput("/");
+              break;
+            case "=":
+              lastNumber = parseFloat(number);
+              number = "";
+              let ans = operations(operator, firstNumber, lastNumber);
+              number = ans;
+              break;
+            default:
+              number += pressedBtn;
+              topDisplay += pressedBtn;
+          }
+          $(".display input:first-child").val(topDisplay);
+          $(".display input:last-child").val(number);
+        });
+      }
+
+      function operations(operator, firstNum, lastNum) {
+        switch (operator) {
+          case "+":
+            return firstNum + lastNum;
+          case "-":
+            return firstNum - lastNum;
+          case "x":
+            return firstNum * lastNum;
+          case "/":
+            return firstNum / lastNum;
+        }
+      }
+
+      function setOutput(pressedButton) {
+        firstNumber = parseFloat(number);
+        topDisplay += pressedButton;
+        number = "";
+        operator = pressedButton;
+      }
+    </script>
+  </body>
+</html>
