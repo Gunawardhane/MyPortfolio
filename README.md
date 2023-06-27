@@ -25,14 +25,14 @@ Desktop View
 
 <img src="./assests/img/Readme/screencapture-127-0-0-1-5501-index-html-2023-06-27-23_33_25.png" alt="Alt text" title="Optional title">
 
-<img src="./assests/img/Readme/screencapture-gunawardhane-github-io-MyPortfolio-2023-06-27-23_37_41.png" alt="Alt text" title="Optional title">
-
-Tablet View
-
-![iPad mini 8 3 - 1](https://user-images.githubusercontent.com/101160326/190048152-0b4bb418-f612-42b5-b25f-4b0ccbd0ae56.png)
-
 Mobile View
 
-![iPhone 13 Pro Max - 1](https://user-images.githubusercontent.com/101160326/190048176-1f99002d-c2af-4df9-9166-479b6b014257.png)
+<img src="./assests/img/Readme/screencapture-gunawardhane-github-io-MyPortfolio-2023-06-27-23_37_41.png" alt="Alt text" title="Optional title">
 
-![MacBook Pro 14_ - 1](https://user-images.githubusercontent.com/101160326/190312299-09d9782a-48e0-4fa8-b736-efa46c55882a.png)
+<h2>POS</h2>
+
+<img src="./assests/img/Readme/pos1.png" alt="Alt text" title="Optional title">
+
+<img src="./assests/img/Readme/pos2.png" alt="Alt text" title="Optional title">
+
+<img src="./assests/img/Readme/pos3.png" alt="Alt text" title="Optional title">
