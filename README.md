@@ -23,6 +23,10 @@ GitHub Pages : https://gunawardhane.github.io/MyPortfolio/<br>
 
 Desktop View
 
+<img src="./assests/img/Readme/screencapture-127-0-0-1-5501-index-html-2023-06-27-23_33_25.png" alt="Alt text" title="Optional title">
+
+<img src="./assests/img/Readme/screencapture-gunawardhane-github-io-MyPortfolio-2023-06-27-23_37_41.png" alt="Alt text" title="Optional title">
+
 Tablet View
 
 ![iPad mini 8 3 - 1](https://user-images.githubusercontent.com/101160326/190048152-0b4bb418-f612-42b5-b25f-4b0ccbd0ae56.png)
